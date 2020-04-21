@@ -196,9 +196,9 @@ gdpr_spain <- gdpr_violations %>%
          # Woah ! there own DPA got fined? 
          clean_controller = ifelse(controller == "Private individual", "Private individual 1",
                                    ifelse(controller == "Private person", "Private individual 2",
-                                          ifelse(controller == "Vodafone Espana", "Vodafone España",
-                                                 ifelse(controller == "Vodafone España, S.A.U.", "Vodafone España",
-                                                        ifelse(controller == "Vodafone ONO", "Vodafone España", as.character(controller))))))) %>%
+                                          ifelse(controller == "Vodafone Espana", "Vodafone EspaÃ±a",
+                                                 ifelse(controller == "Vodafone EspaÃ±a, S.A.U.", "Vodafone EspaÃ±a",
+                                                        ifelse(controller == "Vodafone ONO", "Vodafone EspaÃ±a", as.character(controller))))))) %>%
   # Note that we're removing the 5 instances that are ongoing, need to note in the graph.
   filter(Date != as.Date("1970-01-01"))
 
