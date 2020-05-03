@@ -3,7 +3,7 @@ The data this week comes from [Privacy Affairs](https://www.privacyaffairs.com/g
 
 I found it humorous given this is a #TidyTuesday challenges that Spain's violations tended to be released on Tuesdays, and that fines on Tuesday's tended to skew under 25K Euros as well! 
 
-![](20200420 GDPR Topic/20200421 Spain GDPR Fine by Weekday.png)
+![Image of Plot](https://octodex.github.com/alexcaple/TidyTuesday/20200420 GDPR Topic/20200421 Spain GDPR Fine by Weekday.png)
 
 With more time I would have loved to explore:
  - Why did Spain issue so many fines in October?
