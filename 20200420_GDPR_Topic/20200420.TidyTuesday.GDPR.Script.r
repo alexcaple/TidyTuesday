@@ -327,7 +327,7 @@ gdpr_spain_plot <- ggplot() +
 
 # Save Out Plot -----------------------------------------------------------
 
-#Cairo(2700, 2100, file=here("20200420_GDPR_Topic","20200421_Spain_GDPR_Fine_by_Weekday.png"), type="png", bg="white", dpi=300)
+#Cairo(2700, 2100, file=here("20200420_GDPR_Topic","Output","20200421_Spain_GDPR_Fine_by_Weekday.png"), type="png", bg="white", dpi=300)
 gdpr_spain_plot 
 #dev.off()
   
