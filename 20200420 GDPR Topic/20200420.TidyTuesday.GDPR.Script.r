@@ -290,7 +290,7 @@ gdpr_spain_plot <- ggplot() +
                                "#DE7C5A", #3rd
                                "#570000", # MAx
                                "#FFCBDD")) + # Outlier
-  scale_x_continuous(labels=dollar_format(prefix="???"),
+  scale_x_continuous(#labels=dollar_format(prefix="???"), # Euro symbol converted to ??? for some reason; google later.
                      breaks = seq(from = 0, to = 250, by = 25))+
   labs(title="In Spain I Want to Be Fined on a Tuesday",
        subtitle="Spain's General Data Protection Regulation (GDPR) fines are summarized by weekday below\nfrom the minimum fine to the maximum fine accrued. The grey-blue line represents the inter-quartile-range.",
@@ -318,7 +318,7 @@ gdpr_spain_plot <- ggplot() +
   annotate("text", 
            x=115, 
            y="Tuesday", 
-           label=c("Fines on Tuesdays skewed\nto under ???25K, with the 3rd Quartile\nreaching just ???45K"), 
+           label=c("Fines on Tuesdays skewed\nto under 25K, with the 3rd Quartile\nreaching just 45K"), 
            hjust = 0)+
   geom_curve(aes(x = 110, 
                  y="Tuesday", 
@@ -332,8 +332,8 @@ gdpr_spain_plot <- ggplot() +
 
 # Save Out Plot -----------------------------------------------------------
 
-Cairo(2700, 2100, file=here("20200420.GDPR", "Output","20200421 Spain GDPR Fine by Weekday.png"), type="png", bg="white", dpi=300)
+#Cairo(2700, 2100, file=here("20200420.GDPR", "Output","20200421 Spain GDPR Fine by Weekday.png"), type="png", bg="white", dpi=300)
 gdpr_spain_plot 
-dev.off()
+#dev.off()
   
   
