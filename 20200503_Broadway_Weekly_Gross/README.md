@@ -1,7 +1,7 @@
 # Broadway Weekly Grosses
 The data this week comes from [Playbill](https://www.playbill.com/grosses) via [Alex Cookson](https://www.alexcookson.com/post/most-successful-broadway-show-of-all-time/), and explores Broadway's weekly box office grosses over time.
 
-I wanted to explore every theatre's seat utilization through a "small multiple" graphic in this week’s TidyTuesday challenge. In attempting to do so, I learned there is no immediately easy way to convert an image of points into a clean and ready to go file. Instead, I choose the smallest theatre in the group and manually recreated their seating chart to build the following image:
+I wanted to explore every theatre's seat utilization through a "small multiple" graphic in this week’s TidyTuesday challenge. In attempting to do so, I learned there is no immediately easy way to convert an image of points into a clean and ready to go file. Instead, I chooe the smallest theatre in the group and manually recreated their seating chart to build the following image:
 
 ![American Airlines Theatre Plot](Image/20200509_American_Airlines_Theatre_Plot.png)
 
