@@ -98,6 +98,10 @@ aa_stage_list$w <- data.frame(y=rep(-25, 20), x=c(18:37))
 # Combine List into dataframe
 aa_stage <- bind_rows(aa_stage_list)
 
+aa_stage <- aa_stage %>% 
+  arrange(-y) %>% 
+  mutate(UID = 1:length(y))
+
 # * * * Basic American Airlines Plot --------------------------------------
 ggplot(aa_stage, aes(x=x, y=y)) + 
   geom_point(color="black", fill="grey50", shape=21, size=10) +
@@ -241,9 +245,6 @@ aa_gross_subset <- aa_gross_subset %>%
 dim(aa_stage)
 head(aa_stage)
 
-aa_stage <- aa_stage %>% 
-  mutate(UID = 1:length(y))
-
 plot_aa_full <- aa_gross_subset %>% 
          mutate(Utilization = ifelse(ceiling((seats_sold/performances)/seats_in_theatre)>1, 716, round(((seats_sold/performances)/seats_in_theatre)*714, 0))) %>% 
   group_by(show) %>% 
@@ -332,7 +333,6 @@ final_plot <- ggplot(plot_stage_final, aes(x=x, y=y)) +
 
 
 # Save Out Plot -----------------------------------------------------------
-
 
 #Cairo(4500, 4000, file=here("20200503_Broadway_Weekly_Gross","Image","20200509_American_Airlines_Theatre_Plot.png"), type="png", bg="white", dpi=300)
 final_plot
